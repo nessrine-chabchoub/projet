@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="../js/quiz.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+  <header>
+    <h1>Quiz sur le sport</h1>
+  </header>
+  <aside>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../pages html/about.html">Parcours académique</a></li>
+            <li><a href="../pages html/matiére.html">Matiéres Etudier</a></li>
+            <li><a href="../pages html/sport.html">sports préférer</a></li>
+            <li><a href="../pages html/quizz.html">Quizz</a></li>
+            <li><a href="../pages html/journée.html">Journée d'intégration</a></li>
+            <li><a href="../pages html/iit.html">témoinage de l'IIT</a></li>
+          </ul>
+          <img class="galerie"src="../images/facebook.png" width="20" height="20 "></a>
+          <img class ="galerie" src="../images/messenger.jpg" width="20" height="20"></a>
+          <img class="galerie" src="../images/whatsApp.jfif" width="20" height="20"></a>
+          <img class="galerie" src="../images/pinterest.png" width="20" height="20"></a>
+    </nav>
+</aside>
+  
+    <form>
+      <div id="question1">
+        <p>1-combien de joueurs composent une équipe de rugby ?</p>
+        <input type="radio" name="question1" value="15">15 joueurs<br>
+        <input type="radio" name="question1" value="7">7 joueurs<br>
+        <input type="radio" name="question1" value="10">10 joueurs<br>
+        <button onclick="showAnswer(1)">Afficher la réponse</button>
+      </div>
+      <div id="question2">
+        <p>2-Dans quel pays le volley-ball a t-il été inventer </p>
+        <input type="radio" name="question2" value="Paris">Paris<br>
+        <input type="radio" name="question2" value="Etats-Unis">Etats-Unis<br>
+        <input type="radio" name="question2" value="Madrid">Madrid<br>
+        <input type="radio" name="question2" value="London">London<br>
+        <button onclick="showAnswer(2)">Afficher la réponse</button>
+      </div>
+
+      <div id="question3">
+        <p>3-Quel est le sport qui vous fait perdre le plus de poids ? </p>
+        <input type="radio" name="question2" value="1">Yoga<br>
+        <input type="radio" name="question2" value="2">Natation<br>
+        <input type="radio" name="question2" value="3">Boxe<br>
+        <button onclick="showAnswer(3)">Afficher la réponse</button>
+      </div>
+
+      <div id="question4">
+        <p>4-Doit-on s'étirer avant de commencer à courir? </p>
+        <input type="radio" name="question2" value="Oui">Oui<br>
+        <input type="radio" name="question2" value="Non">Non<br>
+        
+        <button onclick="showAnswer(4)">Afficher la réponse</button>
+      </div>
+
+      <div id="question5">
+        <p> 5-Combien d'heures un sportif de haut niveau doit-il dormir?</p>
+        <input type="radio" name="question2" value="nr1">10h<br>
+        <input type="radio" name="question2" value="nr2">15h<br>
+        <input type="radio" name="question2" value="nr3">5h<br>
+        <button onclick="showAnswer(5)">Afficher la réponse</button>
+      </div>
+
+      <div id="question6">
+        <p>6-Quel sport est considéré comme "le roi des sports" ?</p>
+        
+        <input type="radio" name="question2" value="volley">volley-ball<br>
+        <input type="radio" name="question2" value="basket">basket-ball<br>
+        <input type="radio" name="question2" value="foot">Foot-ball<br>
+        <button onclick="showAnswer(6)">Afficher la réponse</button>
+      </div>
+
+      <div id="question7">
+        <p>7-Combien de temps faut-il prévoir entre un entrainement et un repas ? </p>
+        <input type="radio" name="question2" value="heure 1">15 minutes<br>
+        <input type="radio" name="question2" value="heure 2">1 heure<br>
+        <input type="radio" name="question2" value="heure3">3 heures<br>
+        
+        <button onclick="showAnswer(7)">Afficher la réponse</button>
+      </div>
+
+      <div id="question8">
+        <p>8-L'entrainement nocturne nuit-il au sommeil ? </p>
+        <input type="radio" name="question2" value="oui">OUi<br>
+        <input type="radio" name="question2" value="non">Non<br>
+        
+        <button onclick="showAnswer(8)">Afficher la réponse</button>
+      </div>
+
+
+      <div id="question9">
+        <p>9- Combien de temps dure un match de rugby? </p>
+        <input type="radio" name="question2" value="heure 1">80 minutes<br>
+        <input type="radio" name="question2" value="heure 2">90 minutes<br>
+        <input type="radio" name="question2" value="heure3">30 minutes<br>
+        
+        <button onclick="showAnswer(9)">Afficher la réponse</button>
+      </div>
+
+      <div id="question10">
+        <p>10-Quels sont les domaines que le Yoga relie ? </p>
+        <input type="checkbox" name="question2" value="heure 1">Corps<br>
+        <input type="checkbox" name="question2" value="heure 2">Esprit<br>
+        <input type="checkbox" name="question2" value="heure3">Réspiration<br>
+        
+        <button onclick="showAnswer(10)">Afficher la réponse</button>
+      </div>
+      <input type="button" value="Submit" onclick="checkAnswers()">
+    </form>
+    <div id="answer1" style="display:none;"></div>
+    <div id="answer2" style="display:none;"></div>
+    <div id="answer3" style="display:none;"></div>
+    <div id="answer4" style="display:none;"></div>
+    <div id="answer5" style="display:none;"></div>
+    <div id="answer6" style="display:none;"></div>
+    <div id="answer7" style="display:none;"></div>
+    <div id="answer8" style="display:none;"></div>
+    <div id="answer9" style="display:none;"></div>
+    <div id="answer10" style="display:none;"></div>
+
+    <p id="score"></p>
+
+    <footer>
+      <p>
+          adresse:Route Mahdia km 3 <br>
+          tél:+216 96 873 613 <br>
+          mail:nessrinechabchoub3@gmail.com
+      </p>
+  </footer>
+</body>  
+</html>
